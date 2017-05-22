@@ -1,0 +1,24 @@
+<div class="container pad-top">
+    <table class="table entitytable">
+        <tr>
+            <td><h3>Details for {{superior.name}}</h3></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{superior.name}}</td>
+        </tr>
+        <tr>
+            <td>Department</td>
+            <td>{{superior.department}}</td>
+        </tr>
+        <tr>
+            <td>Comments</td>
+            <td>{{superior.comment}}</td>
+        </tr>
+
+    </table>
+    <div class="col-xs-offset-5 col-xs-2">
+        <a class="btn btn-primary" ui-sref="editSuperior({id:superior.id})">Edit</a>
+    </div>
+</div>

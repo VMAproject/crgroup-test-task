@@ -1,0 +1,26 @@
+<div class="container pad-top">
+    <a ng-show="user" ui-sref="newSuperior" class="btn-primary btn-lg nodecoration">Add New Superior</a>
+    <table class="table entitytable">
+        <tr>
+            <td><h3>All Superior</h3></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><strong>Name</strong></td>
+            <td><strong>Department</strong></td>
+            <td><strong>Comment</strong></td>
+
+
+        </tr>
+        <tr ng-repeat="superior in superiors">
+            <td>{{superior.name}}</td>
+            <td>{{superior.department}}</td>
+            <td>{{superior.comment}}</td>
+            <td>
+                <a class="btn btn-primary" ui-sref="viewSuperior({id:superior.id})">View</a>
+                <a class="btn btn-danger" ng-click="deleteSuperior(superior)">Delete</a>
+            </td>
+        </tr>
+    </table>
+    <div class="alert alert-danger margin-top-2" ng-show="message">{{message}}</div>
+</div>
