@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/VMAproject/crgroup-test-task.svg?branch=master)](https://travis-ci.org/VMAproject/crgroup-test-task)
+
 Задание: написать систему управления персоналом. 
 
 Система должна поддерживать один уровень иерархии для отображения связи начальник - подчиненный. 
